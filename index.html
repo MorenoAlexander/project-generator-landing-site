@@ -18,14 +18,94 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/comps.scss"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="bg-blend-color">
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- navbar -->
+  <div class="flex navbar m-2 justify-center">
+    <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+      <div>
+        <a href="/"><h1>PG</h1></a>
+      </div>
+      <div class="md:block md:ml-10 md:pr-4 md:space-x-8">
+        <a href="#what-is-it" class="font-medium text-gray-500 hover:text-white">What is it?</a>
+        <a href="#roadmap" class="font-medium text-gray-500 hover:text-white">Roadmap</a>
+        <a href="#project" class="font-medium text-gray-500 hover:text-white">Project</a>
+        <a href="#contact" class="font-medium text-gray-500 hover:text-white">Contact Us</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="block container mx-auto mx-2 font-normal font-mono" >
+    <section class="" id="what-is-it">
+      <div id="section-one-title">
+        <h2 class="font-bold mb-1 text-center">What is [Project-generator]?</h2>
+      </div>
+      <p>[Project Generator] is a site where developers looking to sharpen their skills can practice working on new and exciting projects. [Project generator] has a interface where projects
+        can be randomly generated. Users may also browse shared projects from other users.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut blanditiis culpa dolor eligendi
+      esse fugit mollitia nostrum, officiis perspiciatis qui repudiandae rerum saepe totam, vel veniam veritatis vero
+      voluptatibus?</p>
+    </section>
+    <section class="block mb-2 bg-blend-color-dodge bg-gray-400 bg-blue-500" id="roadmap">
+      <div id="section-two-title">
+        <h2 class="font-bold mb-1 text-center">Roadmap</h2>
+      </div>
+      Accusantium at beatae enim explicabo in nisi nostrum perferendis porro quaerat tempore. A distinctio
+      doloremque ducimus error est, ipsa nobis officia perferendis, reiciendis similique, sunt tempore voluptas.
+      Assumenda porro, rerum.
+    </section>
+    <section class="block mb-2 bg-gray-400" id="project">
+
+      <div id="section-three-title" class="">
+        <h2 class="text-center font-bold mb-1">Project</h2>
+      </div>
+
+
+      <p class="outline-black">
+        Aperiam, atque consectetur cumque ex exercitationem explicabo illum, ipsum laboriosam maxime quis totam,
+      unde veritatis voluptatibus. Animi architecto asperiores distinctio dolor ducimus, fugiat iusto nostrum nulla
+        pariatur perspiciatis, quisquam, veniam.
+      </p>
+    </section>
+    <section id="contact" class="justify-center">
+
+      <div id="section-four-title">
+        <h2 class="font-bold mb-1 text-center">Contact us</h2>
+      </div>
+      <p>Aspernatur commodi, consectetur eius fugit minus natus quae. Accusantium ad amet aperiam distinctio
+      doloribus eaque eligendi eum ex expedita fugit impedit iure nulla, obcaecati officia pariatur quasi quis
+      repellendus velit?
+      </p>
+    </section>
+  </div>
+
+  <div class="footer flex mx-auto justify-evenly">
+    <div id="media-links" class="social-media-links">
+      Social Media & Other platforms
+    </div>
+    <div class="useful-links">
+      Useful links
+    </div>
+  </div>
+
+  <div class="relative">
+    <a href="#" id="fab-button"
+     class="bottom-0 right-0 m-2
+          fixed z-50 rounded text-center
+          bg-gray-500 shadow-2xl text-blue-100
+          hover:bg-gray-900 hover:text-blue-200
+          w-10">
+      <p class="justify-center">Top</p>
+    </a>
+  </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
